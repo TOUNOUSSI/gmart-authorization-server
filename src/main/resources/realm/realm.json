@@ -1,0 +1,18 @@
+{
+  "id": "2d158462-1bdf-4fa7-b2c4-dd2f878fe43f",
+  "name": "java-keystore",
+  "providerId": "java-keystore",
+  "subComponents": {},
+  "config": {
+    "keystorePassword": [ "changeit" ],
+    "keyAlias": [ "gmart" ],
+    "keyPassword": [ "changeit" ],
+    "active": [ "true" ],
+    "keystore": [
+            "src/main/resources/store/gmart.jks"
+          ],
+    "priority": [ "101" ],
+    "enabled": [ "true" ],
+    "algorithm": [ "RS256" ]
+  }
+}

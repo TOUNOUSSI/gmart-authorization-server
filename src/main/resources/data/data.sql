@@ -1,0 +1,28 @@
+INSERT INTO OAUTH_CLIENT_DETAILS
+(
+   CLIENT_ID,
+   CLIENT_SECRET,
+   RESOURCE_IDS,
+   SCOPE,
+   AUTHORIZED_GRANT_TYPES,
+   WEB_SERVER_REDIRECT_URI,
+   AUTHORITIES,
+   ACCESS_TOKEN_VALIDITY,
+   REFRESH_TOKEN_VALIDITY,
+   ADDITIONAL_INFORMATION,
+   AUTOAPPROVE
+)
+VALUES
+(
+   'GMART_APP',
+   '$2a$10$mqIw51q.qItBHJbyL5vRTemW3YwwbSwuOfaVwVnh1blPMyh7jfPu2',
+   'USER_CLIENT_RESOURCE,USER_ADMIN_RESOURCE',
+   'role_admin,role_user',
+   'authorization_code,password,refresh_token,implicit',
+   NULL,
+   NULL,
+   900,
+   3600,
+   '{}',
+   NULL
+);
