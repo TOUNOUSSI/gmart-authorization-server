@@ -1,18 +1,3 @@
-
 spring: 
    application: 
       name: gmart-authorization-server
-   security:
-      oauth2:
-        client:
-          registration:
-            facebook:
-              client-id: facebook_client_id
-              client-secret: 93169e0c-949b-4b112-a2f5-9a21d7d8e744
-            gmart:
-              client-id: gmart_client_id
-              client-secret: 78179e0a-999b-4b11-a2f5-9b2da7d8d745
-              authorization-grant-type: password,authorization_code
-              scope: ROLE_user,ROLE_admin,can_create_user,can_read_user,read,write
-              redirect-uri: http://localhost:8762/gmart-api-gateway/login
-              client-authentication-method: basic

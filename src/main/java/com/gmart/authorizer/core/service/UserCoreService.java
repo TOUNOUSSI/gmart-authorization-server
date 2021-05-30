@@ -45,13 +45,17 @@ public class UserCoreService implements UserDetailsService {
 	@Override
 	public UserInfo loadUserByUsername(String username) {
 		UserInfo userInfo = userRepository.findByUsername(username);
-		if(userInfo == null) {
+		if (userInfo == null) {
 			throw new BadCredentialsException("Bad Credentials");
 		}
 
 		new AccountStatusUserDetailsChecker().check(userInfo);
 
 		return userInfo;
+	}
+
+	public UserInfo findByUsername(String username) {
+		return userRepository.findByUsername(username);
 	}
 
 	public UserInfo save(UserInfo user) {
